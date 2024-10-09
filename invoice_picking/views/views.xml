@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="invoice_create_button">
+      <field name="name">stock.picking.form</field>
+      <field name="model">stock.picking</field>
+         <field name="inherit_id">stock.view_picking_form</field>
+      <field name="arch" type="xml">
+        <xpath expr="//header" position="inside">
+          <button name="action_invoice_create_button"
+                  type="object"
+                  string="create invoice"
+                  class="oe_highlight"/>
+        </xpath>
+      </field>
+    </record>
+  </data>
+  </odoo>
+
